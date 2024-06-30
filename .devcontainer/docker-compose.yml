@@ -9,7 +9,6 @@ services:
     ports:
       - ${PORT:-8080}:8080
     command: sleep infinity
-    network_mode: service:db
   db:
     image: mariadb:10.4
     restart: unless-stopped
