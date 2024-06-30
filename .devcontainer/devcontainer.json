@@ -6,9 +6,10 @@
   "features": {},
   "forwardPorts": [
     8080,
+    80,
     3306
   ],
-  "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html",
+  "postCreateCommand": "sudo chmod a+x \"$PWD/public\" && sudo rm -rf /var/www/html && sudo ln -s \"$PWD/public\" /var/www/html",
   "customizations": {},
   "remoteUser": "root"
 }

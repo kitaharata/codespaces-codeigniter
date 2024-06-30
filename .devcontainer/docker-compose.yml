@@ -8,6 +8,7 @@ services:
       - ../..:/workspaces:cached
     ports:
       - ${PORT:-8080}:8080
+      - 80:80
     command: sleep infinity
   db:
     image: mariadb:10.4
